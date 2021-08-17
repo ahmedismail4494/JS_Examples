@@ -1,0 +1,433 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: auto;
+  margin: 100px 0;
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+  margin: 5px;
+}
+
+.testing {
+  height: 10000px;
+  max-width: 600px;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #000;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.number {
+  background: #00e1e5;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.testing input {
+  height: 25px;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  margin-top: 40px;
+}
+
+.testing button {
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+
+/*  start   EX - 4  */
+.but_goup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/*  start   EX - 5  */
+.testing .myp_c_1 {
+  background: #2a87f9;
+}
+.testing .myp_c_2 {
+  background: #ff6b6b;
+}
+.testing .myp_c_3 {
+  background: #61f481;
+}
+.testing .myp_c_4 {
+  background: #00fff2;
+}
+
+
+
+/*****------  End   EX - 17  ------*****/
+.container {
+  margin: 20px auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container .color-switcher {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: center;
+  float: right;
+  display: block;
+}
+
+.container .color-switcher li {
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  margin: auto 5px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.container .color-switcher li:first-child {
+  background-color: #c0392b;
+}
+.container .color-switcher li:nth-child(2) {
+  background-color: #16a085;
+}
+.container .color-switcher li:nth-child(3) {
+  background-color: #8e44ad;
+}
+.container .color-switcher li:last-child {
+  background-color: #2c3e50;
+}
+
+.container .test_h3 {
+  float: left;
+  display: block;
+  font-weight: 800;
+  color: #c0392b;
+}
+.container .test_2 {
+  height: 100px;
+  width: 100%;
+  text-align: left;
+  float: left;
+  display: block;
+  background-color: #c0392b;
+  padding: 20px;
+  color: #fff;
+}
+
+
+/**   EX - 17   in action  **/
+.red    .mYhead{ color: #c0392b; }
+.green  .mYhead{ color: #16a085; }
+.purple .mYhead{ color: #8e44ad; }
+.black  .mYhead{ color: #2c3e50; }
+
+.red    .MYbody{ background-color: #c0392b; }
+.green  .MYbody{ background-color: #16a085; }
+.purple .MYbody{ background-color: #8e44ad; }
+.black  .MYbody{ background-color: #2c3e50; }
+
+
+/*****------  End   EX - 17  ------*****/
+
+
+
+/*****------  start   EX - 18  ------*****/
+.slider{
+  margin: 25px auto 100px auto;
+  width: 100%;
+}
+.slider .slider_container {
+  margin: 10px auto;
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+.slider .slider_container .slider_number {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 20px;
+  z-index: 2;
+  border-radius: 6px;
+}
+.slider .slider_container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+  z-index: 1;
+}
+.slider .slider_container img.active {
+  opacity: 1;
+}
+
+.slider .slider_control {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider_control .next_button,
+.slider_control .prev_button {
+  background-color: rgb(65, 225, 217);
+  color: #fff;
+  font-size: 16px;
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  user-select: none;
+  border-radius: 5px;
+}
+.slider .slider_control .next_button {
+  float: right;
+}
+.slider .slider_control .prev_button {
+  float: left;
+}
+.slider .slider_control .next_button.disabled,
+.slider .slider_control .prev_button.disabled {
+  background-color: rgba(65, 225, 217, 0.5);
+  cursor: no-drop;
+}
+.slider_control .indicators {
+  width: 60%;
+  float: left;
+}
+.slider_control .indicators ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+.slider_control .indicators ul li {
+  display: inline-block;
+  background-color: #f6f6f6;
+  color: #333;
+  font-weight: bold;
+  height: 28px;
+  width: 28px;
+  border-radius: 4px;
+  margin: 0 2px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.slider_control .indicators ul li.active {
+  background-color: rgb(65, 225, 217);
+  color: #fff;
+}
+
+/*****------  End   EX - 18  ------*****/
+
+
+
+
+/*****------  Start   EX 19 -  To-Do List   ------*****/
+.todo_container {
+  width: 100%;
+  margin: 30px auto ;
+  background-color: #f6f6f6;
+}
+.todo_container .tasks_add{
+  width: 100%;
+  padding: 15px;
+  background-color: #009688;
+  position: relative;
+  
+}
+.todo_container .tasks_add input{
+  display: inline-block;
+  width: calc(100% - 15px);
+  height: 43px;
+  padding: 20px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}.todo_container .tasks_add input:focus{
+  outline: none;
+}
+
+.todo_container .tasks_add .plus {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  right: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
+  font-size: 30px;
+  transition: all 0.3s ease-in-out;
+}.todo_container .tasks_add .plus:hover {
+  transform: rotate(90deg);
+}
+
+
+.todo_container .tasks_content {
+  padding: 15px;
+}
+.todo_container .tasks_content .no_tasks_message {
+  color: rgb(221, 0, 0);
+  font-size: 15px;
+}
+.todo_container .tasks_content > span {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;  
+}.todo_container .tasks_content > span:not(:last-child) {
+  margin-bottom: 10px;
+}
+.todo_container .tasks_content .task_box .delete {
+  float: right;
+  background-color: #e91e63;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.todo_container .tasks_content .task_box.finished {
+  text-decoration: line-through;
+}
+
+.tasks_stats {
+  width: 100%;
+  margin: 10px auto;
+  font-size: 12px;
+  overflow: hidden;
+}
+.tasks_stats .tasks_count {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  text-align: left;
+}
+.tasks_stats .tasks_completed {
+  width: 50%;
+  float: right;
+  padding: 10px;
+  text-align: right;
+}
+.tasks_stats .tasks_count span,
+.tasks_stats .tasks_completed span {
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}  
+.tasks_stats .tasks_count span{
+  background-color: #e91e63;
+}
+.tasks_stats .tasks_completed span{
+  background-color: #03a9f4;
+}
+
+/*****------  End   EX 19 -  To-Do List   ------*****/
+
+
+
+
+
+/*****------  Start   EX 20 - Start Control Local Storage   ------*****/
+.parent {
+  width: 100%;
+  margin: 40px auto;
+  background-color: #eee;
+  padding: 20px;
+}
+
+.parent .search_input {
+  border: none;
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 20px;
+}.parent .search_input:focus {
+  outline: none;
+  background-color: #fff;
+}
+.parent .buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.parent .buttons span {
+  background-color: #009688;
+  text-align: center;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.parent .results{
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 15px;
+  border: 2px dashed #eee;
+  text-align: center;
+}
+.parent .results  span span{
+  font-weight: bold;
+  color: #009688;
+}
+
+/*****------  End     EX 20 - Start Control Local Storage   ------*****/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****------  Start   EX - 19  ------*****/
+
+/*****------  End   EX - 19  ------*****/
+
+
+
+/*****------  Start   EX - 19  ------*****/
+
+/*****------  End   EX - 19  ------*****/
+
